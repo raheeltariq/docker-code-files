@@ -1,6 +1,6 @@
 FROM alpine
 LABEL maintainer="kashif@vpractice.pk"
-RUN apk add --update nodejs nodejs-npm
+RUN apk add --update nodejs-npm
 COPY . /src
 WORKDIR /src
 RUN npm install
